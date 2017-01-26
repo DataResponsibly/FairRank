@@ -100,9 +100,9 @@ def main(_data_folder,_rez_fn,_sensi_bound):
         for si in sensi_atts:
             current_fn=_data_folder+"/"+di+"_"+si+".csv"
             try:        
-		        data=pd.read_csv(current_fn)
-		    except EnvironmentError:
-        		print("Cannot find "+current_fn)
+                data=pd.read_csv(current_fn)
+            except EnvironmentError:
+                print("Cannot find "+current_fn)
             
             print "Finishing computation of data: "+di+"_"+si
             reverse_atts=reverse_atts_dic[di+","+si]
