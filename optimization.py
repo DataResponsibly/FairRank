@@ -35,8 +35,7 @@ def calculateEvaluateRez(_rez,_data,_inputscores,_k,_accmeasure):
     if not isinstance( _k, ( int, long ) ):
         raise TypeError("Input k must be an integer")
     if not isinstance( _accmeasure, str ):
-        raise TypeError("Input accuracy measure must be a string that \
-            choose from ['scoreDiff', 'positionDiff', 'kendallDis', 'spearmanDis', 'pearsonDis'] defined in the begining of this file")
+        raise TypeError("Input accuracy measure must be a string that choose from ['scoreDiff', 'positionDiff', 'kendallDis', 'spearmanDis', 'pearsonDis'] defined in the begining of this file")
     
     # error handling for input value
     if user_N == 0:
@@ -235,8 +234,7 @@ def lbfgsOptimize(_params, _data, _pro_data, _unpro_data,
     if not isinstance( _k, ( int, long ) ):
         raise TypeError("Input k must be an integer")
     if not isinstance( _accmeasure, str ):
-        raise TypeError("Input accuracy measure must be a string that \
-            choose from ['scoreDiff', 'positionDiff', 'kendallDis', 'spearmanDis', 'pearsonDis'] defined in the begining of this file")
+        raise TypeError("Input accuracy measure must be a string that choose from ['scoreDiff', 'positionDiff', 'kendallDis', 'spearmanDis', 'pearsonDis'] defined in the begining of this file")
     
     # error handling for input value
     if user_N == 0:
