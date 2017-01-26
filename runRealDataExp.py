@@ -101,7 +101,7 @@ def main(_data_folder,_rez_fn,_sensi_bound):
             current_fn=_data_folder+"/"+di+"_"+si+".csv"
             try:        
 		        data=pd.read_csv(current_fn)
-		    except EnvironmentError as e:
+		    except EnvironmentError:
         		print("Cannot find "+current_fn)
             
             print "Finishing computation of data: "+di+"_"+si

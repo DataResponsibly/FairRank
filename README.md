@@ -44,9 +44,15 @@ normalizer.txt stores the maximum of input population that has already computed 
 during computation of normalizer of fairness measure i.e. bias in order to save time when compute the same
 input population multiple times. After get a normalizer of some input population, can manually add a new line into this file to save computation of normalizer during next experiment of this input population. New line should follow the below format exactly.
 
-Format of normalizer: total user number,size of protected group,fairness measure:value of normalizer. Example of lines are:
+Format of normalizer: 
+total user number,size of protected group,fairness measure:value of normalizer. 
+
+Example of lines are:
+
 1000,548,rKL:100.0
+
 1000,548,rND:100.0
+
 1000,548,rRD:100.0
 
 
