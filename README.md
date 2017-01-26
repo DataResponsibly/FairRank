@@ -27,16 +27,28 @@ Usage of the core code modules
 runOptimization.py, runRealDataExp.py and runSyntheticExp.py usage the
 above core code; these scripts can be invoked on the command line
 
-Test code 
+Demo of code 
 ----------
-- testDataGenerator tests the usage of dataGenerator.py
-- testMeasures tests the usage of measures.py
-- testOptimization tests the usage of runOptimization.py
-- testRealdataExp tests the usage of runRealDataExp.py
-- testSyntheticExp tests the usage of runSyntheticExp.py
-- testUtility tests the usage of utility.py
+- demo_dataGenerator shows the usage of dataGenerator.py
+- demo_measures shows the usage of measures.py
+- demo_optimization shows the usage of runOptimization.py
+- demo_realDataExp shows the usage of runRealDataExp.py
+- demo_syntheticDataExp shows the usage of runSyntheticExp.py
+- demo_utility shows the usage of utility.py
 
 The above test scripts include the usage guideline of core code.
+
+External file
+-------------
+normalizer.txt stores the maximum of input population that has already computed previously. This file will be accessed 
+during computation of normalizer of fairness measure i.e. bias in order to save time when compute the same
+input population multiple times. After get a normalizer of some input population, can manually add a new line into this file to save computation of normalizer during next experiment of this input population. New line should follow the below format exactly.
+
+Format of normalizer: total user number,size of protected group,fairness measure:value of normalizer. Example of lines are:
+1000,548,rKL:100.0
+1000,548,rND:100.0
+1000,548,rRD:100.0
+
 
 Datasets
 --------
